@@ -1,0 +1,16 @@
+* {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: url(assets/bac.png);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+.cards {
+    margin: 280px 150px 0;
+}
