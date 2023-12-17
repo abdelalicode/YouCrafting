@@ -23,9 +23,11 @@ PHP supports Object-Oriented Programming (OOP), a programming paradigm that uses
 - **Object**: An instance of a class.
 - **Properties**: Variables within a class that store data.
 - **Methods**: Functions within a class that perform actions.
-- **Encapsulation**: Bundling data and methods that operate on that data within a single unit.
+- **Encapsulation**: Encapsulation promotes data hiding, preventing direct manipulation of object properties from outside the class. By encapsulating data and methods.
 - **Inheritance**: Creating a new class based on an existing class, inheriting its properties and methods.
-- **Polymorphism**: The ability of a class to take on multiple forms.
+- **Polymorphism**: Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. Like we specified in the previous chapter; Inheritance lets us inherit fields and methods from another class. Polymorphism uses those methods to perform different tasks.
+- **Abstraction**: Abstract classes and methods are when the parent class has a named method, but need its child class(es) to fill out the tasks.
+An abstract class is a class that contains at least one abstract method. An abstract method is a method that is declared, but not implemented in the code.
 
 ## Classes and Objects
 

@@ -35,6 +35,12 @@ class Article extends Db {
     //     $stmt->close();
     // }
 
+
+    public function updateArticle($id, $title, $content) {
+        $sqlup = "UPDATE `article` SET `title`='$title',`content`='$content' WHERE id = $id";
+        $result = $this->connect()->query($sqlup);
+    }
+
     public function deleteArticle($idd) {
        $sqldel ="DELETE FROM `article` WHERE id = $idd";
        $resdel = $this->connect()->query($sqldel);
