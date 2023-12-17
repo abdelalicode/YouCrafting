@@ -26,4 +26,17 @@ class Article extends Db {
         $sqlins = "INSERT INTO article (`title`, `content`, `user_id`) VALUES ('$title', '$content', '$userid')";
         $result = $this->connect()->query($sqlins);
     }
+
+    // public function setArticle($title, $content, $userid) {
+    //     $sqlins = "INSERT INTO article (`title`, `content`, `user_id`) VALUES (?, ?, ?)";
+    //     $stmt = $this->connect()->prepare($sqlins);
+    //     $stmt->bind_param('sss', $title, $content, $userid);
+    //     $stmt->execute();
+    //     $stmt->close();
+    // }
+
+    public function deleteArticle($idd) {
+       $sqldel ="DELETE FROM `article` WHERE id = $idd";
+       $resdel = $this->connect()->query($sqldel);
+    }
 }

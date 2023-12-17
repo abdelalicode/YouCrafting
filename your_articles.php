@@ -32,7 +32,7 @@ include_once "classes/article.class.php";
 
                     echo "<h5 class='card-title'>" . $row['title'] . "</h5>";
                     echo "<p class='card-text'>created at: " . $row['creation_date'] . "</p>";
-                    echo "<a href='includes/delete.php?=" . $row['id'] . "'class='btn btn-danger'>DELETE</a>";
+                    echo "<a href='includes/deletearticle.php?id=" . $row['id'] . "'class='btn btn-danger'>DELETE</a>";
                     echo "<hr>";
                 }
             } else {
